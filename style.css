@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --reg-weight: 400;
+  --bold-weight: 700;
+}
+
+body {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 300px;
+  max-width: 90%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  background-color: aquamarine;
+  text-align: left;
+}
+
+.flex-item :not(button) {
+  margin-bottom: 25px;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  min-width: 50px;
+}
+
+.sedans .icon {
+  background-image: url(./images/icon-sedans.svg);
+}
+
+.suvs .icon {
+  background-image: url(./images/icon-suvs.svg);
+}
+
+.luxury .icon {
+  background-image: url(./images/icon-luxury.svg);
+}
+
+.flex-item h1 {
+  font-size: 2rem;
+  font-weight: var(--bold-weight);
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  color: var(--transparent-white);
+}
+
+.flex-item p {
+  line-height: 1.6;
+  color: var(--transparent-white);
+}
+
+.button-wrapper {
+  flex-grow: 1;
+}
+
+.flex-item button {
+  border: 3px solid var(--very-light-gray);
+  border-radius: 20px;
+  width: 140px;
+  max-width: 100%;
+  padding: 8px;
+  background-color: var(--very-light-gray);
+}
+
+.flex-item button:hover {
+  color: var(--very-light-gray)
+}
+
+.sedans button {
+  color: var(--bright-orange);
+}
+
+.sedans button:hover {
+  background-color: var(--bright-orange);
+}
+
+.suvs button {
+  color: var(--dark-cyan);
+}
+
+.suvs button:hover {
+  background-color: var(--dark-cyan);
+}
+
+.luxury button {
+  color: var(--very-dark-cyan);
+}
+
+.luxury button:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+
+
