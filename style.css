@@ -25,23 +25,23 @@ body {
 .flex-container {
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
-  width: 300px;
+  margin: 5rem auto;
+  width: 20rem;
   max-width: 90%;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 
 .flex-item {
   display: flex;
   flex-direction: column;
-  padding: 35px;
+  padding: 3rem;
   background-color: aquamarine;
   text-align: left;
 }
 
 .flex-item :not(button) {
-  margin-bottom: 25px;
+  margin-bottom: 2rem;
 }
 
 .sedans {
@@ -59,8 +59,8 @@ body {
 .icon {
   background-repeat: no-repeat;
   background-size: contain;
-  height: 30px;
-  min-width: 50px;
+  height: 2rem;
+  min-width: 3.5rem;
 }
 
 .sedans .icon {
@@ -84,20 +84,17 @@ body {
 }
 
 .flex-item p {
+  flex-grow: 1;
   line-height: 1.6;
   color: var(--transparent-white);
 }
 
-.button-wrapper {
-  flex-grow: 1;
-}
-
 .flex-item button {
-  border: 3px solid var(--very-light-gray);
-  border-radius: 20px;
-  width: 140px;
+  border: 0.2rem solid var(--very-light-gray);
+  border-radius: 1.5rem;
+  width: 9rem;
   max-width: 100%;
-  padding: 8px;
+  padding: 0.5rem;
   background-color: var(--very-light-gray);
 }
 
@@ -129,5 +126,12 @@ body {
   background-color: var(--very-dark-cyan);
 }
 
+/* desktop design */
 
+@media(min-width: 768px) {
+  .flex-container {
+    flex-direction: row;
+    width: 60rem;
+  }
+}
 
