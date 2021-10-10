@@ -133,5 +133,8 @@ body {
     flex-direction: row;
     width: 60rem;
   }
+  .flex-item button {
+      margin-top: 3rem;
+  }
 }
 
